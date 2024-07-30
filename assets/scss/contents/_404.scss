@@ -1,0 +1,60 @@
+@charset"utf-8";
+@import "../module/_variable";
+/* ============================================ */
+
+.page404 {
+    padding-top: 72px;
+
+    @include mq-down {
+        width: 100%;
+        padding: 80px 24px 24px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: right;
+
+        @include mq-down {
+            max-width: 90vw;
+            background-size: contain;
+            background-position-y: 80%;
+            padding: 30px 0;
+            flex-direction: column;
+        }
+
+        picture, img {
+            max-width: 300px;
+
+            @include mq-down {
+                width: 100%;
+                max-width: 70vw;
+                padding: 24px 0;
+            }
+        }
+    }
+}
+
+.contents404{
+    padding: 40px 24px 80px;
+    .inner {
+            padding-bottom: 64px;
+            @include mq-down {
+                text-align: left;
+                line-height: 1.2rem;
+            }
+    
+            p {
+                font-weight: 400;
+                @include mq-down {
+                    font-weight: 700;
+                }
+            }
+
+        }
+}

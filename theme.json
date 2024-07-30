@@ -1,0 +1,67 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings":{
+        
+        "layout":{
+            "contentSize": "960px",
+            "wideSize": "1200px"
+        },
+        
+        "color": {
+            "palette":[
+                {
+                    "name": "ColorPrimary",
+                    "slug": "color_primary",
+                    "color": "#0D0D0D"
+                },
+                {
+                    "name": "ColorMain",
+                    "slug": "color_main",
+                    "color": "#F1E85B"
+                },
+                {
+                    "name": "ColorSub",
+                    "slug": "color_sub",
+                    "color": "#E7F294"
+                },
+                {
+                    "name": "ColorAccent",
+                    "slug": "color_accent",
+                    "color": "#3B94FD"
+                },
+                {
+                    "name": "Attention",
+                    "slug": "attention",
+                    "color": "#FF5151"
+                }
+            ]
+        },
+
+        "typography": {
+            "fontFamilies":[
+                {
+                    "name": "ヒラギノ角ゴシック ProN",
+                    "slug": "hiragino_kaku_gothic",
+                    "fontFamily": "\"ヒラギノ角ゴシック\",\"Hiragino Kaku Gothic\",HiraginoKakuGothic,\"ヒラギノ角ゴシック ProN\",\"Hiragino Kaku Gothic ProN\",sans-serif"
+                },
+                {
+                    "name": "Noto Sans Japanese",
+                    "slug": "noto-sans-japanese",
+                    "fontFamily": "\"Noto Sans Japanese\", noto sans japanese",
+                    "fontFace": [{
+                        "fontFamily": "Noto Sans Japanese",
+                        "fontWeight": "\"400\",700",
+                        "fontStyle": "normal",
+                        "fontStretch": "normal",
+                        "src": ["https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"]
+                    }]
+                }
+            ] 
+        }
+    },
+    "styles":{},
+    "patterns": [],
+    "customTemplates": [],
+    "templateParts": []
+}

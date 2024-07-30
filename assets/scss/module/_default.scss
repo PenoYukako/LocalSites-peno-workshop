@@ -1,0 +1,128 @@
+@charset"utf-8";
+@import "_variable"; /*色設定、ブレイクポイント設定*/
+
+/* ============================================ */
+
+
+* ,*:before,*:after{
+	float: none;
+	position: static;
+	box-sizing: border-box;
+}
+
+.preload * {
+	transition: none !important;
+ }
+
+body{
+	background-color: #F2F2F2;
+	width:100%;
+  	margin: 0 auto;
+	text-align: center;
+	display: block;
+	position: relative;
+	text-size-adjust: 100%;
+}
+
+// h1 h2 h3 p li 基本フォント設定
+/* ============================================ */
+
+h1,h2,h3,p,li {
+	font-family: 'Noto Sans Japanese', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	color: $colorTx_common;
+	letter-spacing: 0.5rem;
+}
+
+// h1 h2 文字サイズ、マージン
+/* ============================================ */
+h1, h2 {
+	font-size: 34px;
+	line-height: 1.2rem;
+	margin-bottom: 52px;
+	font-weight: 700;
+	@include mq-down {
+		font-size: 28px;
+	}
+}
+
+// h3　文字サイズ、マージン
+/* ============================================ */
+h3 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.1rem;
+	margin-bottom: 24px;
+	@include mq-down {
+			line-height: 2.0rem;
+	}
+}
+
+
+// p l1 span　文字サイズ、マージン
+/* ============================================ */
+
+p,li,span {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.5rem;
+	letter-spacing: 0.1rem;
+	@include mq-down {
+		font-size: 16px;
+	}
+}
+
+// 通常固定ページテキスト
+/* ============================================ */
+
+.textArea {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	@include mq-down {
+			max-width: 100%;
+			padding: 0px 24px;
+		}
+	h2,h3{
+		margin: 16px 0 8px;
+	}
+	p,li,span{
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.5rem;
+		letter-spacing: 0.1rem;
+		text-align: left;
+		padding: 8px 0;
+		@include mq-down {
+				font-size: 16px;
+			}
+	}
+	.txCenter {
+		text-align: center;
+	}
+}
+
+// dd dt　文字サイズ、マージン
+/* ============================================ */
+dl,dd{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5rem;
+}
+
+
+// img
+/* ============================================ */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+// フッター最下部固定
+/* ============================================ */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}

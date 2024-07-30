@@ -1,0 +1,207 @@
+@charset"utf-8";
+@import "../module/_default";
+/* ============================================ */
+
+.kv{
+  background-color: $color_main;
+  padding-top: 72px;
+  @include mq-down{
+    width: 100%;
+    padding: 80px 24px;
+  }
+  .container{
+      width: 100%;
+      max-width: 1200px;
+      height: 585px;
+      margin: 0 auto;
+      background-image: url("../img/home/kv@3x.png");
+      background-repeat: no-repeat;
+      background-size: 56% auto;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      background-position: right;
+    @include mq-down{
+      max-width: 90vw;
+      background-size: contain;
+      background-position-y: 80%;
+      padding: 30px 0;
+      flex-direction: column;
+    }
+    h2{
+      img{
+        max-width: 410px;
+        padding: 16px 25px 0;
+        @include mq-down{
+          width: 100%;
+          max-width: 90vw;
+        }
+      }
+    }
+  }
+}
+
+.topContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  @include mq-down{
+    max-width: 100%;
+  }
+  
+  .illustrationList{    
+    padding: 80px 0 120px;
+    @include mq-down{
+      padding: 80px 24px;
+    }
+    h2 {
+      @include mq-down {
+        margin-bottom: 32px;
+      }
+    }
+    p{
+      @include mq-down {
+          margin-bottom: 64px;
+        }
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 64px;
+      @include mq-down{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+    }
+    a{
+      background-color: $color_main;
+      border-radius: 40px;
+      width: 100%;
+      max-width: 250px;
+      box-shadow: 4px 5px 8px rgba(0, 0, 0, .2);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 8px;
+      &:hover{
+        box-shadow: 0px 0px 25px rgb(242 199 120);
+      }
+      @include mq-down{
+        margin-bottom: 80px;
+      }
+      img {
+          position: relative;
+          top: -27px;
+          max-width: 198px;
+          max-height: 170px;
+        }
+      &:nth-child(1){
+        background-image: url("../img/home/illustList01_bg.png");
+        span{
+          padding-top: 16px;
+        }
+      }
+      &:nth-child(2) {
+        background-image: url("../img/home/illustList02_bg.png");
+        img{
+          left: 10px;
+        }
+      }
+      &:nth-child(3) {
+        background-image: url("../img/home/illustList03_bg.png");
+      }
+      &:nth-child(4) {
+        background-image: url("../img/home/illustList04_bg.png");
+      }
+      span {
+        display: inline-block;
+        padding: 0 16px 16px;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  .profile{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 80px 0 120px;
+    @include mq-down{
+      background-color: #fff;
+      padding: 80px 24px 103px;
+    }
+    .annotation {
+      font-size: 14px;
+      padding-top: 8px;
+      text-align: right;      
+    }
+    .contents{
+      background-color: #fff;
+      border-radius: 40px;
+      background-image: url(../img/home/prof_img.png);
+      background-size: 45%;
+      background-repeat: no-repeat;
+      background-position: top left;
+      display: flex;
+      justify-content: right;
+      @include mq-down{
+        background-image: url(../img/home/sp_prof_img.png);
+        background-size: 80% auto;
+        background-position: 50% 0;
+      }
+      .inner{
+        width: 60%;
+        text-align: left;
+        padding: 72px 32px 40px;
+        @include mq-down{
+          width: 100%;
+          padding: 32vh 0 0;
+        }
+        ul{
+          padding-bottom: 24px;
+          @include mq-down {
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+          }
+        }
+        li{
+          line-height: 1.55;
+          display: inline-block;
+          &:first-child {
+              font-size: 28px;
+              padding-bottom: 24px;
+              line-height:1;
+          }
+          .sns{
+            font-size: 25px;
+            margin-left: 16px;
+            @include mq-down {
+                margin-left: 32px;
+                font-size: 32px;
+            }
+          }
+        }
+        .designWorks {
+          display: flex;
+          justify-content: right;
+          a{
+            padding: 16px 48px;
+            @include mq-down{
+              text-align: center;
+              padding: 24px 46px;
+            }
+          }
+          sup{
+            top: 0;
+          }
+          .position-fa-left{
+            @include mq-down{
+              right: -30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
