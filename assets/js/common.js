@@ -56,71 +56,11 @@ jQuery(function ($) {
         },
       ],
     });
-
-
-
-
-
-      // console.log($(this).find(".slide"));
-      // 全体の枚数からみて現在のページ番号を反映している
-      
-    // .slick({
-    //   arrow: true,
-    //   autoplay: false,
-    //   asNavFor: '.thumbnails'
-    // });
-    // $(this).find(".slide").on("init", function (event, slick) {
-    //   $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-    //   $(".now-count").text(slick.currentSlide + 1);
-    //   $(".all-count").text(slick.slideCount);
-    // });
-    // $(this).find(".slide").on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-    //   $(".now-count").text(nextSlide + 1);
-    // });
-    
   });
-
-
-
-
-
-  // $(".is-style-pen0works-slick")
-  //   .on("init", function (event, slick) {
-  //     $(this).append('<div class="slick-num"><span class="now-count"></span> / <span class="all-count"></span></div>');
-  //     $(".now-count").text(slick.currentSlide + 1);
-  //     $(".all-count").text(slick.slideCount);
-  //   })
-  //   .slick({
-  //     arrow: true,
-  //     autoplay: false,
-  //     asNavFor: '.slider-nav'
-  //   })
-  //   .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-  //     $(".now-count").text(nextSlide + 1);
-  //   });
 
   // クラスの中にspanを埋め込み
   $(".wp-block-button__link").wrapInner('<span></span>');
 
   $(".fas").addClass('position-fa-left');
 }); 
-
-// $('.slider-nav').slick({
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   asNavFor: '.slickSlider',
-//   arrows: false,
-//   dots: false,
-//   centerMode: true,
-//   focusOnSelect: true,
-//   responsive: [
-//     {
-//       breakpoint: 767,
-//       settings: {
-//         slidesToShow: 2,
-//       },
-//     },
-//   ],
-
-// });
 
