@@ -1,0 +1,191 @@
+@charset"utf-8";
+@import "../module/_default";
+/* ============================================ */
+
+.workPageImg {
+    h2{
+        text-align: left;
+        line-height: 2.0rem;
+        display: flex;
+        align-items: center;
+        @include mq-down{
+            flex-direction: column;
+
+        }
+        span{
+            margin-left: 24px;
+            background-color: $colorTx_wh;
+            padding: 8px 16px;
+            border-radius: 24px;
+            @include mq-down{
+                margin-left: 0;
+                margin-top: 16px;
+            }
+        }
+        @include mq-down{
+            text-align: center;
+        }
+    }
+}
+
+.workDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    padding: 80px 0;
+    @include mq-down{
+        max-width: 100%;
+        padding: 56px 24px;
+    }
+    p {
+        padding-bottom: 64px;
+
+        @include mq-down {
+            text-align: left;
+        }
+    }
+
+    /*スライドデザイン調整 */
+    .slickSlider{
+        // img{
+        //     margin: 0 auto;
+        // }
+        p{
+            color: $colorTx_wh;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            padding: 4px 0;
+            width: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+        }
+    }
+    .slick-slide{
+        // background-color: #fff;
+    }
+    .slick-prev,.slick-next{
+        z-index: 2;
+        &:before{
+            color: #000000;
+            opacity: 0.3;
+        }
+    }
+    .slick-next{
+        @include mq-down{
+            right: -15px;
+        }
+    }
+    .slick-prev {
+        @include mq-down {
+            left: -15px;
+        }
+    }
+
+    .slider-nav{
+        li{
+            margin: 64px 8px 0;
+            @include mq-down{
+                margin-top: 40px;
+            }
+        }
+    }
+    .slick-num{
+        display: inline-block;
+        padding: 2px 8px;
+        margin-top: 8px;
+        border-radius: 20px;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        color: $colorTx_wh;
+        font-size: 12px;
+        .now-count, .all-count{
+            color: $colorTx_wh;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}
+
+.externalLink{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 16px;
+    @include mq-down{
+        flex-direction: column;
+    }
+    .fa-position-left {
+            font-size: 15px;
+            right: -30px;
+        }
+}
+
+.workDetail{
+    .privatePageDetails {
+        padding: 56px 0 0;
+        // display: flex;
+
+        @include mq-down {
+            flex-direction: column-reverse;
+        }
+
+        .inner {
+            @include mq-down {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .item1 {
+                    order: 2;
+                    margin-bottom: 16px;
+                }
+
+                .item2 {
+                    order: 1;
+                    text-align: center;
+                    margin-bottom: 16px;
+                    padding-bottom: 0;
+                }
+            }
+
+            dl {
+                background-color: #fff;
+                border-radius: 16px;
+                display: flex;
+                text-align: left;
+                flex-wrap: wrap;
+                margin: 0 0 24px;
+                padding: 24px;
+                row-gap: 16px;
+
+                dt {
+                    width: calc(40%);
+                    margin-right: 16px;
+                    border-right: solid 1px $color_main;
+                }
+
+                dd {
+                    width: calc(60% - 16px);
+                }
+
+                .detail {
+                    display: block;
+
+                    dd {
+                        margin-left: 16px;
+                        width: 100%;
+                        display: list-item;
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+
+        
+    }
+        
+}

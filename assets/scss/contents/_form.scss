@@ -1,0 +1,85 @@
+@charset"utf-8";
+@import "../module/_default";
+/* ============================================ */
+.formContents{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    .contents{
+        width: 100%;
+        max-width: 960px;
+        @include mq-down {
+                max-width: 100%;
+                padding: 0px 24px;
+            }
+    }
+    .inner{
+        margin-top: 32px;
+        @include mq-down {
+                text-align: left;
+                line-height: 1.2rem;
+            }
+        p{
+            font-weight: 400;
+            &:last-of-type{
+                padding-bottom: 16px;
+            }
+            @include mq-down{
+                font-weight: 700;
+            }
+        }
+        a{
+            text-decoration: underline;
+        }
+    }
+    .wp_form{
+        display: flex;
+        justify-content: center;
+        .contents{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .inner{
+            text-align: left;
+            padding: 0px;
+            .must {
+                    color: $colorTx_attention;
+                    font-weight: 400;
+                }
+            label {
+                    pointer-events: none;
+                    display: block;
+                    padding-bottom: 8px;
+                }
+        }
+        
+        .form__item {
+            font-size: 18px;
+            border: 1px solid #000;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 100%;
+            min-width: 760px;
+            text-align: left;
+            padding: 8px;
+            @include mq-down{
+                min-width: 90vw;
+            }
+        }
+        .contactBtn{
+            margin-top: 40px;
+            @include mq-down{
+                margin-top: 64px;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                @include mq-down{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,58 @@
+@charset"utf-8";
+@import "_default";
+
+/* ============================================ */
+
+footer{
+  background-color: #F2C778;
+  width:100%;
+  padding: 16px;
+  margin-top: auto;
+  @include mq-down {
+      width: 100%;
+      padding: 80px 24px 40px;
+  }
+  li,p{
+      font-size: 14px;
+      color: #9E8351;
+  }
+  a{
+    text-decoration: underline;
+  }
+  .sp_contactBtn{
+    display: none;
+    @include mq-down{
+      display: inherit;
+      a {
+          text-decoration: none;
+        }
+    }
+  }
+  
+
+  .inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @include mq-down{
+      flex-direction: column-reverse;
+    }
+  }
+  ul{
+    justify-content: center;
+    padding: 16px 0;
+    display: flex;
+  }
+  li{
+    padding: 0 16px;
+    @include mq-down{
+      &:not(:last-child){
+        display: none;
+      }
+    }
+  }
+  p{
+    padding: 16px 0;
+  }
+}

@@ -1,0 +1,175 @@
+@charset"utf-8";
+@import "_variable";
+
+/* ============================================ */
+header{
+  width:100%;
+  height: 72px;
+  display: flex;
+  z-index: 1;
+  background-color: #f2f2f2;
+  box-shadow: (0px 3px 2px rgba(0,0,0,0.1));
+  position: fixed;
+  @include mq-down{
+    width: 100%;
+    height: 6vh;
+  }
+  .container{
+    width: 1200px;
+    padding: 8px 0 ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @include mq-down{
+      width: 100%;
+      align-items: center;
+    }
+    .logo{
+      margin-bottom: 0;
+      img{
+        padding-left: 16px;
+        max-width: 308px;
+        @include mq-down{
+          max-width: 50vw;
+        }
+      }
+    }
+  }
+}
+
+
+.gnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  @include mq-down{
+    position: absolute;
+    top: -700px;
+    color:$colorTx_common;
+    width: 100%;
+    height: calc(108vw - 8vw);
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  li{
+    font-weight: 400;
+    &:hover{
+      color: $color_main;
+    }
+    @include mq-down{
+      font-size: 24px;
+      width: 100%;
+      border-bottom: solid 2px;
+    }
+    &:first-child {
+      display: none;
+      @include mq-down {
+        display: inline-block;
+      }
+    }
+    a{
+      padding: 8px 16px;
+      margin: 0 16px;
+      @include mq-down{
+        margin: 0;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        padding: 22px 0;
+        &:after {
+            font: var(--fa-font-solid);
+            content: "\f0da";
+            position: absolute;
+            right: 30px;
+          }
+      }
+    }
+  }
+}
+
+
+// メニュー背景
+.js-cover{
+  display: none;
+  @include mq-down {
+    background-color: $color_main;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    pointer-events: none;
+  }
+}
+
+// ハンバーガーボタン
+.humburgerBtn{
+  display: none;
+  @include mq-down {
+    z-index: 3;
+    width: 30px;
+    height:30px;
+    display: block;
+    position: fixed;
+    right: 2vw;
+    top: 5vw;
+    //   @include mq-down(smL){
+    //     right: 2vw;
+    //     top: 3vw;
+    //   }
+    // @include mq-down(){
+    //   right: 2.5vw;
+    //   top: 25px;
+    // }
+    span{
+      transition: all 0.5s;
+      display: block;
+      width: 33px;
+      height: 4px;
+      border-radius: 3px;
+      background:$color_primary;
+      position: relative;
+      transform: rotate(0deg);
+      // @include mq-down(){
+      //   width: 35px;
+      // }
+      &.top, &.bottom{
+        position: absolute;
+        transform: rotate(0deg);
+      }
+      &.top{
+        top: -8px;
+        // @include mq-down(){
+        //   top: -12px;
+        // }
+      }
+      &.bottom{
+        top: 8px;
+        // @include mq-down(){
+        //   top: 12px;
+        // }
+      }
+    }
+  }
+}
+
+// ハンバーガーアイコンアニメーション
+.isOpen{
+    span{
+      &.middle{
+        background: rgba(255, 255, 255, 0);
+      }
+      &.top{
+        transform: rotate(-405deg);
+        top: 0px;
+      }
+      &.bottom{
+        transform: rotate(405deg);
+        top: 0px;
+      }
+    }
+}
