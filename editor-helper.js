@@ -1,7 +1,29 @@
 /* ============================================ */
 // グループのスタイル追加
 /* ============================================ */
+
+/*---------------------------------
+ レイアウト
+ ---------------------------------*/
 // coreがデフォルトの指定
+wp.blocks.registerBlockStyle("core/columns", {
+    name: "privateworks-columns",
+    label: "作品詳細カラム",
+    isDefault: false,
+});
+
+wp.blocks.registerBlockStyle("core/column", {
+    name: "privateworks-right-column",
+    label: "右カラム",
+    isDefault: false,
+});
+
+wp.blocks.registerBlockStyle("core/paragraph", {
+    name: "privateworks-paragraph",
+    label: "詳細テキストボックス",
+    isDefault: false,
+});
+
 wp.blocks.registerBlockStyle("simple-definition-list-blocks/list", {
     name: "group-caption",
     label: "キャプション",
@@ -9,11 +31,14 @@ wp.blocks.registerBlockStyle("simple-definition-list-blocks/list", {
 });
 
 wp.blocks.registerBlockStyle("core/paragraph", {
-    name: "work-details",
-    label: "作品詳細文ボックス",
+    name: "privateworks-url",
+    label: "URLテキスト",
     isDefault: false,
 });
 
+/*---------------------------------
+ ボタン周り
+ ---------------------------------*/
 
 wp.blocks.registerBlockStyle("core/button", {
     name: "return-btn",
@@ -34,10 +59,15 @@ wp.blocks.registerBlockStyle("core/button", {
 });
 
 wp.blocks.registerBlockStyle("core/buttons", {
-    name: "btn-gap",
-    label: "ボタンマージンギャップ",
+    name: "btn-box",
+    label: "ボタンボックス",
     isDefault: false,
 });
+
+
+/*---------------------------------
+ イメージ周り
+ ---------------------------------*/
 
 wp.blocks.registerBlockStyle("core/group", {
     name: "pen0works-slick",

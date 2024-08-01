@@ -505,6 +505,55 @@ img {
 }
 
 /* ============================================ */
+/*---------------------------------
+ レイアウト
+ ---------------------------------*/
+.is-style-privateworks-columns {
+  padding: 80px 0;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .is-style-privateworks-columns {
+    padding-top: 56px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wp-block-column.is-style-privateworks-right-column {
+    margin-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.wp-block-column.is-style-privateworks-right-column .is-style-privateworks-url {
+  padding: 8px 0 16px;
+}
+@media screen and (max-width: 768px) {
+  .wp-block-column.is-style-privateworks-right-column .is-style-privateworks-url {
+    padding: 16px 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wp-block-column.is-style-privateworks-right-column .wp-block-buttons {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: center;
+    padding-bottom: 0;
+  }
+}
+
 .is-style-group-caption {
   background-color: #fff;
   border-radius: 16px;
@@ -514,9 +563,14 @@ img {
   text-align: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 0 24px;
+  margin-bottom: 24px;
   padding: 24px;
   row-gap: 16px;
+}
+@media screen and (max-width: 768px) {
+  .is-style-group-caption {
+    margin-bottom: 0px;
+  }
 }
 .is-style-group-caption dt {
   width: 40%;
@@ -536,33 +590,18 @@ img {
   list-style-type: disc;
 }
 
-.is-style-work-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 400;
-  text-align: left;
-  padding-right: 24px;
+.is-style-privateworks-paragraph {
   line-height: 2rem;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .is-style-work-details {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    width: 100%;
-    padding-right: 0;
-  }
 }
 
 /*---------------------------------
  ボタン
 ---------------------------------*/
 /*===前のページに戻るボタン===*/
-.is-style-return-btn {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .is-style-return-btn {
+    width: 100%;
+  }
 }
 .is-style-return-btn .wp-block-button__link {
   background-color: #0D0D0D;
@@ -591,6 +630,7 @@ img {
   .is-style-return-btn .wp-block-button__link {
     padding: 24px 56px;
     width: 100%;
+    min-width: auto;
     font-weight: 700;
   }
 }
@@ -606,6 +646,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.is-style-return-btn .wp-block-button__link span:after {
+  position: absolute;
+  top: calc(50% - 0.45em);
+  right: -20px;
+  font: var(--fa-font-solid);
+  content: "\f0da";
 }
 @media screen and (max-width: 768px) {
   .is-style-return-btn .wp-block-button__link span {
@@ -634,8 +681,10 @@ img {
 }
 
 /*===コンタクトボタン===*/
-.is-style-contact-btn {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .is-style-contact-btn {
+    width: 100%;
+  }
 }
 .is-style-contact-btn .wp-block-button__link {
   background-color: #3B94FD;
@@ -663,6 +712,8 @@ img {
 @media screen and (max-width: 768px) {
   .is-style-contact-btn .wp-block-button__link {
     display: none;
+    width: 100%;
+    min-width: auto;
   }
 }
 .is-style-contact-btn .wp-block-button__link span {
@@ -677,6 +728,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.is-style-contact-btn .wp-block-button__link span:after {
+  position: absolute;
+  top: calc(50% - 0.45em);
+  right: -20px;
+  font: var(--fa-font-solid);
+  content: "\f0da";
 }
 @media screen and (max-width: 768px) {
   .is-style-contact-btn .wp-block-button__link span {
@@ -707,8 +765,10 @@ img {
 }
 
 /*===外部リンクボタン===*/
-.is-style-obl-btn {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .is-style-obl-btn {
+    width: 100%;
+  }
 }
 .is-style-obl-btn .wp-block-button__link {
   background-color: #F2F2F2;
@@ -755,6 +815,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.is-style-obl-btn .wp-block-button__link span:after {
+  position: absolute;
+  top: calc(50% - 0.45em);
+  right: -20px;
+  font: var(--fa-font-solid);
+  content: "\f08e";
+}
 @media screen and (max-width: 768px) {
   .is-style-obl-btn .wp-block-button__link span {
     font-size: 1.2rem;
@@ -781,16 +848,75 @@ img {
           transform: translateX(-23%) translateY(-40%) rotate(135deg);
 }
 
-.is-style-btn-gap {
-  -webkit-column-gap: 56px;
-     -moz-column-gap: 56px;
-          column-gap: 56px;
+.wp-block-buttons.is-style-btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 56px 0 32px;
+  -webkit-column-gap: 64px;
+     -moz-column-gap: 64px;
+          column-gap: 64px;
 }
 @media screen and (max-width: 768px) {
-  .is-style-btn-gap {
+  .wp-block-buttons.is-style-btn-box {
+    display: block;
+    padding: 0 0 40px;
     -webkit-column-gap: 0px;
        -moz-column-gap: 0px;
             column-gap: 0px;
     row-gap: 24px;
   }
+}
+
+/*---------------------------------
+ スライダー
+---------------------------------*/
+.is-style-pen0works-slick .slick-num {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 8px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 12px;
+}
+.is-style-pen0works-slick .slick-num .now-count, .is-style-pen0works-slick .slick-num .all-count {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.thumbnails {
+  margin-top: 56px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 2;
+}
+.slick-prev:before, .slick-next:before {
+  color: #000000;
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: -15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-prev {
+    left: -15px;
+  }
+}
+
+.wp-block-image {
+  margin: 0 8px;
 }

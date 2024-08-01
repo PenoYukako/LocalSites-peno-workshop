@@ -34,34 +34,19 @@
     
 
     <!--　制作実績　-->
-    <?php if ( have_posts() ) : ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-        <section class="workDetail">
-          <div class="container">
+    <section class="workDetail">
+      
+      <div class="container">
+        <?php if ( have_posts() ) : ?>
+          <?php while ( have_posts() ) : the_post(); ?>
+
             <div class="privatePageDetails">
-              <p><?php the_content(); ?></p>
-              <div class="inner">
-            
-          
-            
-          </div>
-            
-          </div>
-      <?php endwhile; ?>
-    <?php endif; ?>
-
-
-
-    <div class="ctaArea">
-        <div class="contents">
-          <div class="ctaBtn">
-            <a href="<?php echo home_url('/works/'); ?>" class="btn btn__Bk"><span>一覧ページに戻る<i
-                  class="fa-solid fa-caret-right position-fa-left"></i></span></a>
-            <a href="<?php echo home_url('/contact/'); ?>" class="btn btn__Blue"><span>お問い合わせ<i
-                  class="fa-solid fa-caret-right position-fa-left"></i></span></a>
-          </div>
-        </div>
-    </div>
+                <?php the_content(); ?>
+            </div>
+      
+          <?php endwhile; ?>
+         <?php endif; ?>
+      </div>
 
     </section>
     

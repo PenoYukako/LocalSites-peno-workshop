@@ -61,6 +61,5 @@ jQuery(function ($) {
   // クラスの中にspanを埋め込み
   $(".wp-block-button__link").wrapInner('<span></span>');
 
-  $(".fas").addClass('position-fa-left');
 }); 
 
