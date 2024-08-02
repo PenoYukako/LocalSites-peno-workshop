@@ -1,19 +1,18 @@
 <?php get_header(); ?>
 
   <!--タイトルイメージ-->
-  <section class="pageImg">
+  <section class="titleBox">
     <div class="container">
       <h2>
         Works
       </h2>
-        <picture>
-            <source media="(min-width:767px )" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/works/title_img.png">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/works/title_img.png" alt="公開制作実績タイトル画像">
-        </picture>
+      <picture>
+          <source media="(min-width:767px )" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/works/title_img.png">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/works/title_img.png" alt="公開制作実績タイトル画像">
+      </picture>
       
     </div>
   </section>
-
 
   <section class="workList">
     
@@ -58,8 +57,6 @@
     ?>
 
   
-</section>
-    
-  
+  </section>
 
- <?php get_footer(); ?>
+<?php get_footer(); ?>

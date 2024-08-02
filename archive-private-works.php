@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <!--タイトルイメージ-->
-  <section class="pageImg">
+  <section class="titleBox">
     <div class="container">
       <h2>
         Private Works

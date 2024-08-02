@@ -72,6 +72,13 @@ $breakpointsSP: (
     display: flex;
     justify-content: center;
     align-items: center;
+    &:after {
+      position: absolute;
+      top: calc(50% - 0.45em);
+      right: -20px;
+      font: var(--fa-font-solid);
+      content: "\f0da";
+    }
     @include mq-down{
       font-size: 1.2rem;
     }
@@ -90,13 +97,10 @@ $breakpointsSP: (
     width: 150%;
     height: 600%;
     content: '';
-    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    -webkit-transform: translateX(-150%) translateY(-40%) rotate(135deg);
     transform: translateX(-150%) translateY(-40%) rotate(135deg);
   }
   &:hover:before {
-    -webkit-transform: translateX(-23%) translateY(-40%) rotate(135deg);
     transform: translateX(-23%) translateY(-40%) rotate(135deg);
   }
  }
@@ -125,72 +129,72 @@ $breakpointsSP: (
  }
 
 
-/*===白ボタン===*/
-.btn__Wh {
-  background-color: #fff;
-  color: $colorTx_common;
-  border: solid 2px $color_primary;
-  //  ホバー時
-  &:hover {
-    color: $colorTx_wh;
-  }
-  &:before {
-    background: $color_primary;
-  }
-}
+// /*===白ボタン===*/
+// .btn__Wh {
+//   background-color: #fff;
+//   color: $colorTx_common;
+//   border: solid 2px $color_primary;
+//   //  ホバー時
+//   &:hover {
+//     color: $colorTx_wh;
+//   }
+//   &:before {
+//     background: $color_primary;
+//   }
+// }
 
-/*===青ボタン===*/
-.btn__Blue {
-  background-color: $color_accent;
-  color: $colorTx_wh;
-  //  ホバー時
-  &:hover {
-    color: $colorTx_wh;
-  }
-  &:before {
-    background: $color_primary;
-  }
-}
+// /*===青ボタン===*/
+// .btn__Blue {
+//   background-color: $color_accent;
+//   color: $colorTx_wh;
+//   //  ホバー時
+//   &:hover {
+//     color: $colorTx_wh;
+//   }
+//   &:before {
+//     background: $color_primary;
+//   }
+// }
 
-/*===外部リンクボタン===*/
-.btn__OBL {
-  background-color: #F2F2F2;
-  color: $colorTx_common;
-  border: solid 2px $color_primary;
-  border-radius: 0;
-  width: 100%;
-  span {
-      padding-right: 2px;
-    }
-  //  ホバー時
-  &:hover {
-    color: $colorTx_wh;
-  }
-  &:before {
-    background: $color_primary;
-  }
-    .position-fa-left{
-      @include mq-down {
-          right: -34px;
-        }
-    }
-}
- .fa-position-right {
-   position: absolute;
-   font-size: 20px;
-   top: calc(50% - .5em);
-   left: 20px;
+// /*===外部リンクボタン===*/
+// .btn__OBL {
+//   background-color: #F2F2F2;
+//   color: $colorTx_common;
+//   border: solid 2px $color_primary;
+//   border-radius: 0;
+//   width: 100%;
+//   span {
+//       padding-right: 2px;
+//     }
+//   //  ホバー時
+//   &:hover {
+//     color: $colorTx_wh;
+//   }
+//   &:before {
+//     background: $color_primary;
+//   }
+//     .position-fa-left{
+//       @include mq-down {
+//           right: -34px;
+//         }
+//     }
+// }
+//  .fa-position-right {
+//    position: absolute;
+//    font-size: 20px;
+//    top: calc(50% - .5em);
+//    left: 20px;
 
-   @include mq-down {
-     left: 2rem;
-   }
- }
- .instBtn{
-  max-width: 314px;
-  @include mq-down{
-    max-width: 100%;
-  }
- }
+//    @include mq-down {
+//      left: 2rem;
+//    }
+//  }
+//  .instBtn{
+//   max-width: 314px;
+//   @include mq-down{
+//     max-width: 100%;
+//   }
+//  }
 
 
 //  スマホ_フッターお問い合わせボタン
@@ -205,9 +209,6 @@ $breakpointsSP: (
   border: solid 2px $color_primary;
   display: inline-block;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   letter-spacing: 0.1em;
   @include mq-down{
@@ -233,136 +234,46 @@ $breakpointsSP: (
 /*---------------------------------
  CTAボタン周り
  ---------------------------------*/
-.ctaArea {
-  width: 100%;
-  padding: 80px 0;
-  display: flex;
-  justify-content: center;
-  @include mq-down{
-    padding: 56px 0;
-  }
+// .ctaArea {
+//   width: 100%;
+//   padding: 80px 0;
+//   display: flex;
+//   justify-content: center;
+//   @include mq-down{
+//     padding: 56px 0;
+//   }
 
-  .contents {
-    width: 100%;
-    max-width: 1200px;
-    line-height: 1.5rem;
+//   .contents {
+//     width: 100%;
+//     max-width: 1200px;
+//     line-height: 1.5rem;
 
-    p {
-      line-height: 2rem;
-      @include mq-down{
-        padding: 48px 24px 40px;
-        text-align: left;
-      }
-    }
-  }
+//     p {
+//       line-height: 2rem;
+//       @include mq-down{
+//         padding: 48px 24px 40px;
+//         text-align: left;
+//       }
+//     }
+//   }
 
-  .ctaBtn {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-between;
-    padding: 56px 0 32px;
-    column-gap: 64px;
-    @include mq-down{
-      padding: 0 0 40px;
-    }
-    a{
-      @include mq-down {
-          &:nth-child(2) {
-            display: none;
-          }
-        }
-    }
-  }
-}
+//   .ctaBtn {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     align-content: space-between;
+//     padding: 56px 0 32px;
+//     column-gap: 64px;
+//     @include mq-down{
+//       padding: 0 0 40px;
+//     }
+//     a{
+//       @include mq-down {
+//           &:nth-child(2) {
+//             display: none;
+//           }
+//         }
+//     }
+//   }
+// }
 
-/*---------------------------------
- 配下ページタイトル イラストあり
- ---------------------------------*/
-
-.pageImg {
-  background-color: $color_main;
-  padding-top: 72px;
-
-  @include mq-down {
-    width: 100%;
-    padding: 90px 24px 24px;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    height: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: right;
-
-    @include mq-down {
-      max-width: 90vw;
-      background-size: contain;
-      background-position-y: 80%;
-      padding: 30px 0;
-      flex-direction: column;
-    }
-
-    img {
-      max-height: 230px;
-      padding-left: 48px;
-
-      @include mq-down {
-        width: 100%;
-        max-width: 240px;
-        max-height: 240px;
-        padding: 24px 0;
-      }
-    }
-
-    h2 {
-      margin-bottom: 0;
-    }
-  }
-}
-
-/*===実績ページ===*/
-.workPageImg {
-  background-color: $color_sub;
-
-}
-
-
-
-/*---------------------------------
- 配下ページタイトル イラストなし
- ---------------------------------*/
-
-.pageNoImg {
-  padding-top: 72px;
-
-  @include mq-down {
-    width: 100%;
-    padding: 80px 24px 0px;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    height: 176px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include mq-down {
-      max-width: 90vw;
-      height: 104px;
-      padding: 30px 0;
-      flex-direction: column;
-    }
-
-    h2 {
-      margin-bottom: 0;
-    }
-  }
-}

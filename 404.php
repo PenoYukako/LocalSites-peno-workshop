@@ -14,8 +14,7 @@
         <h3>お探しのページは見つかりませんでした。</h3>
         <p>URLが変更・削除されたか、現在利用できない可能性があります。<br>お手数をおかけしますが、TOPページからお探しください。</p>
       </div>
-      <a href="<?php echo home_url('/'); ?>" class="btn btn__Bk"><span>TOPページに戻る<i
-            class="fa-solid fa-caret-right fa-position-left"></i></span></a>
+      <a href="<?php echo home_url('/'); ?>" class="btn btn__Bk"><span>TOPページに戻る</span></a>
 
     </section>
 

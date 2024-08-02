@@ -14,7 +14,7 @@
           wp_nav_menu($args);
           ?>
           <div class="sp_contactBtn">
-            <a href="contact.html" class="btn__contact">お問い合わせ</a>
+            <a href="<?php echo home_url('/contact/'); ?>" class="btn__contact">お問い合わせ</a>
           </div>
         </div>
       </footer>

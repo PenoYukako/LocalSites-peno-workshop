@@ -3,9 +3,19 @@
 /* ============================================ */
 
 /*---------------------------------
+見出し
+ ---------------------------------*/
+wp.blocks.registerBlockStyle("core/heading", {
+    name: "h2-heading",
+    label: "H2見出し",
+    isDefault: false,
+});
+
+
+/*---------------------------------
  レイアウト
  ---------------------------------*/
-// coreがデフォルトの指定
+// 非公開実績
 wp.blocks.registerBlockStyle("core/columns", {
     name: "privateworks-columns",
     label: "作品詳細カラム",
@@ -19,7 +29,7 @@ wp.blocks.registerBlockStyle("core/column", {
 });
 
 wp.blocks.registerBlockStyle("core/paragraph", {
-    name: "privateworks-paragraph",
+    name: "detailedTx-paragraph",
     label: "詳細テキストボックス",
     isDefault: false,
 });
@@ -33,6 +43,13 @@ wp.blocks.registerBlockStyle("simple-definition-list-blocks/list", {
 wp.blocks.registerBlockStyle("core/paragraph", {
     name: "privateworks-url",
     label: "URLテキスト",
+    isDefault: false,
+});
+
+// 公開実績
+wp.blocks.registerBlockStyle("core/group", {
+    name: "works-group",
+    label: "シングルレイアウト",
     isDefault: false,
 });
 
@@ -61,6 +78,12 @@ wp.blocks.registerBlockStyle("core/button", {
 wp.blocks.registerBlockStyle("core/buttons", {
     name: "btn-box",
     label: "ボタンボックス",
+    isDefault: false,
+});
+
+wp.blocks.registerBlockStyle("core/buttons", {
+    name: "btn3-box",
+    label: "3ボタンボックス",
     isDefault: false,
 });
 

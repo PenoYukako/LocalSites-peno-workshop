@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <!--タイトルイメージ-->
-  <section class="pageImg workPageImg">
+  <section class="titleBox pageTitle">
     <div class="container">
       <h2>
         <?php the_title(); ?>
@@ -30,11 +30,14 @@
         <?php while ( have_posts() ) : the_post(); ?>
       
           <div class="privatePageDetails">
-            <?php the_content(); ?>  
+            <?php the_content(); ?>
+            
           </div>
           
         <?php endwhile; ?>
       <?php endif; ?>
+
+
     </div>
   </section>
     
