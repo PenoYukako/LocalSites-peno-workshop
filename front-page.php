@@ -55,7 +55,7 @@
                 <li>イラストを描くことが得意なフリーランスのデザイナーです。<br>WEB、DTP、コーディングなど、幅広く制作業務に携わっています。　趣味は漫画を描くこと。</li>
               </ul>
               <div class="designWorks">
-                <a href="<?php echo home_url('/private-works/'); ?>" class="btn btn__Bk"><span>デザイン実績はこちら<sup>※</sup></span></a>
+                <a href="<?php echo home_url('/private-works/login/'); ?>" class="btn btn__Bk"><span>デザイン実績はこちら<sup>※</sup></span></a>
               </div>
             </div>
           </div>

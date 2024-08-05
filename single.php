@@ -14,7 +14,11 @@
       <?php while ( have_posts() ) : the_post(); ?>
         <section class="workDetail">
           <div class="container">
-            <?php the_content(); ?>
+            <?php if( is_user_logged_in() && is_singular('private-works') && is_single('/login') ) : ?>
+              <p>テスト</p>
+            <?php else : ?>
+              <?php the_content(); ?>
+            <?php endif; ?>
           </div>
       <?php endwhile; ?>
     <?php endif; ?>

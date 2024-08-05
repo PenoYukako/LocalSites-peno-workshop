@@ -138,16 +138,18 @@ add_action('after_setup_theme', 'my_editor_support');
  *===============================================*/
 
 /**
- * WP-membersで記事一覧ページを見せないようにする
+ * 非ログイン時に記事一覧ページを見せないようにする
  */
 function un_logged_in_user_redirect() {
-    if( ! is_user_logged_in()  && is_post_type_archive('private-works') ) {
+    if( (! is_user_logged_in()  && is_post_type_archive('private-works')) || (! is_user_logged_in()  && is_singular('private-works') &&  ! is_single('login')) ) {
+        // 条件１：”ログインしていない”かつ"投稿タイプのスラッグがprivate-worksのアーカイブページ"
+        // 条件２：”ログインしていない”かつ"個別記事のprivate-works"かつ"個別記事のスラッグがloginでない"
         wp_redirect( '/login' );// ログインページのURL
         exit();
     }
 }
 add_action( 'template_redirect','un_logged_in_user_redirect');
-
+// アクセスした場合はリダイレクトする
 
 /**
  * ログイン後のリダイレクト先指定 wpmem_login_redirect
@@ -159,6 +161,26 @@ function my_login_redirect( $redirect_to, $user_id ) {
     return home_url( '/private-works/' );
 }
 
+add_filter( 'wpmem_logout_link', 'my_logout_link' );
+ 
+function my_logout_link( $string ) {
+    $string = home_url('logout');
+    return $string;
+}
+
+
+/**
+ * ログイン後に/loginに訪れたユーザーをリダイレクトするコード。プラグインのコードが先に動いているので動かない
+ */
+// function logged_in_user_redirect() {
+//     if( is_user_logged_in()  && is_singular('private-works') && is_single('/login') ) {
+//         // "ログイン中"かつ"個別記事のprinate-works"かつ"個別記事のスラッグがlogin"
+//         wp_redirect( '/private-works' );
+//         // ログインページのURL
+//         exit();
+//     }
+// }
+// add_action( 'template_redirect','logged_in_user_redirect');
 
 /**
  * WordPressにログインした際に表示される管理バーを非表示
@@ -176,6 +198,16 @@ add_filter( 'show_admin_bar' , 'theme_show_admin_bar' );
 
 
 /**
+ * 「既存ユーザのログイン」から「ログイン」へテキストの変更
+ */
+add_filter( 'wpmem_default_text', 'sv_wpmem_default_text' );
+function sv_wpmem_default_text( $text ) {
+    $text['login_heading'] = 'ログイン';
+    
+    return $text;
+}
+
+/**
  * ログインエラーメッセージをカスタマイズ
  */
 add_filter( 'wpmem_login_failed', 'my_login_failed_msg' );
@@ -187,10 +219,29 @@ function my_login_failed_msg( $str )
 }
 
 /**
- * 「既存ユーザのログイン」から「ログイン」へテキストの変更
+ * ログインフォームのテキスト変更
  */
-add_filter( 'wpmem_default_text', 'sv_wpmem_default_text' );
-function sv_wpmem_default_text( $text ) {
-    $text['login_heading'] = 'ログイン';
-    return $text;
+add_filter( 'wpmem_inc_login_inputs', 'my_login_inputs' );
+function my_login_inputs( $default_inputs ) {
+ 
+    $default_inputs[0]['name'] = 'ユーザー名';
+    $default_inputs[1]['name'] = 'パスワード';
+ 
+    return $default_inputs;
 }
+
+/**
+ * ログインフォームをカスタマイズ
+ */
+add_filter( 'wpmem_login_form_args', function ( $args, $action ) {
+ 
+    $args['buttons_before'] = '<div class="my-row-wrapper">';
+    $args['buttons_after']  = '</div>';
+    $args['button_class']  = 'btn';
+    // パラメーターキーにユニークタグを代入
+    return $args;
+     
+}, 10, 3 );
+
+
+

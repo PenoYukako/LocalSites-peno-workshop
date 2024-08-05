@@ -1,3 +1,80 @@
 @charset"utf-8";
 @import "../module/_default";
 /* ============================================ */
+
+.privatePageDetails{
+    #wpmem_login{
+        width: 100%;
+        fieldset{
+            text-align: left;
+            .div_text {
+                margin-bottom: 40px;
+            }
+            .my-row-wrapper{
+                text-align: center;
+            }
+        }
+    }
+    // 不要な要素削除
+    legend{
+        display: none;
+    }
+    .my-row-wrapper{
+        label{
+            display: none !important; 
+        }
+    } 
+
+    // エラーメッセージ
+    .wpmem_msg{
+        color: $colorTx_attention;
+        border: 0;
+        background: none;
+    }
+    .my-row-wrapper{
+        input{
+            display: none;
+        }
+        .btn{
+            display: inline-block;
+            background-color: $color_accent;
+            color: $colorTx_wh;
+            //  ホバー時
+            &:hover {
+            color: $colorTx_wh;
+            }
+            &:before {
+            background: $color_primary;
+            }
+        }
+    }
+
+
+// 一旦仮。リダイレクトできたら消す
+.login_status {
+    text-align: center;
+
+    a {
+        margin-top: 40px;
+        background-color: $color_primary;
+        color: $colorTx_wh;
+        overflow: hidden;
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        padding: 16px 56px;
+        border-radius: 100vh;
+        display: inline-block;
+        min-width: 314px;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+}
+
+
+}
+

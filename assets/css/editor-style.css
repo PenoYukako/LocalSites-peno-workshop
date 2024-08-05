@@ -86,17 +86,6 @@ Font
           transform: translateX(-23%) translateY(-40%) rotate(135deg);
 }
 
-.position-fa-left {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  right: -30px;
-}
-@media screen and (max-width: 768px) {
-  .position-fa-left {
-    right: -40px;
-  }
-}
-
 /*===黒ボタン===*/
 .btn__Bk {
   background-color: #0D0D0D;
@@ -107,6 +96,17 @@ Font
 }
 .btn__Bk:before {
   background: #F1E85B;
+}
+
+.btn__Blue {
+  background-color: #3B94FD;
+  color: #fff;
+}
+.btn__Blue:hover {
+  color: #fff;
+}
+.btn__Blue:before {
+  background: #0D0D0D;
 }
 
 .btn__contact {
@@ -226,38 +226,6 @@ p, li, span {
 }
 
 /* ============================================ */
-.textArea {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-@media screen and (max-width: 768px) {
-  .textArea {
-    max-width: 100%;
-    padding: 0px 24px;
-  }
-}
-.textArea h2, .textArea h3 {
-  margin: 16px 0 8px;
-}
-.textArea p, .textArea li, .textArea span {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem;
-  text-align: left;
-  padding: 8px 0;
-}
-@media screen and (max-width: 768px) {
-  .textArea p, .textArea li, .textArea span {
-    font-size: 16px;
-  }
-}
-.textArea .txCenter {
-  text-align: center;
-}
-
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -474,17 +442,6 @@ Font
           transform: translateX(-23%) translateY(-40%) rotate(135deg);
 }
 
-.position-fa-left {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  right: -30px;
-}
-@media screen and (max-width: 768px) {
-  .position-fa-left {
-    right: -40px;
-  }
-}
-
 /*===黒ボタン===*/
 .btn__Bk {
   background-color: #0D0D0D;
@@ -495,6 +452,17 @@ Font
 }
 .btn__Bk:before {
   background: #F1E85B;
+}
+
+.btn__Blue {
+  background-color: #3B94FD;
+  color: #fff;
+}
+.btn__Blue:hover {
+  color: #fff;
+}
+.btn__Blue:before {
+  background: #0D0D0D;
 }
 
 .btn__contact {
@@ -614,38 +582,6 @@ p, li, span {
 }
 
 /* ============================================ */
-.textArea {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-@media screen and (max-width: 768px) {
-  .textArea {
-    max-width: 100%;
-    padding: 0px 24px;
-  }
-}
-.textArea h2, .textArea h3 {
-  margin: 16px 0 8px;
-}
-.textArea p, .textArea li, .textArea span {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem;
-  text-align: left;
-  padding: 8px 0;
-}
-@media screen and (max-width: 768px) {
-  .textArea p, .textArea li, .textArea span {
-    font-size: 16px;
-  }
-}
-.textArea .txCenter {
-  text-align: center;
-}
-
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -1069,17 +1005,6 @@ Font
           transform: translateX(-23%) translateY(-40%) rotate(135deg);
 }
 
-.position-fa-left {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  right: -30px;
-}
-@media screen and (max-width: 768px) {
-  .position-fa-left {
-    right: -40px;
-  }
-}
-
 /*===黒ボタン===*/
 .btn__Bk {
   background-color: #0D0D0D;
@@ -1090,6 +1015,17 @@ Font
 }
 .btn__Bk:before {
   background: #F1E85B;
+}
+
+.btn__Blue {
+  background-color: #3B94FD;
+  color: #fff;
+}
+.btn__Blue:hover {
+  color: #fff;
+}
+.btn__Blue:before {
+  background: #0D0D0D;
 }
 
 .btn__contact {
@@ -1209,38 +1145,6 @@ p, li, span {
 }
 
 /* ============================================ */
-.textArea {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-@media screen and (max-width: 768px) {
-  .textArea {
-    max-width: 100%;
-    padding: 0px 24px;
-  }
-}
-.textArea h2, .textArea h3 {
-  margin: 16px 0 8px;
-}
-.textArea p, .textArea li, .textArea span {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem;
-  text-align: left;
-  padding: 8px 0;
-}
-@media screen and (max-width: 768px) {
-  .textArea p, .textArea li, .textArea span {
-    font-size: 16px;
-  }
-}
-.textArea .txCenter {
-  text-align: center;
-}
-
 /* ============================================ */
 dl, dd {
   font-size: 16px;

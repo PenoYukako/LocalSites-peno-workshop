@@ -105,14 +105,14 @@ $breakpointsSP: (
   }
  }
 
- .position-fa-left {
-   position: absolute;
-   top: calc(50% - .5em);
-   right: -30px;
-   @include mq-down {
-     right: -40px;
-   }
- }
+//  .position-fa-left {
+//    position: absolute;
+//    top: calc(50% - .5em);
+//    right: -30px;
+//    @include mq-down {
+//      right: -40px;
+//    }
+//  }
 
 
 /*===黒ボタン===*/
@@ -144,17 +144,17 @@ $breakpointsSP: (
 // }
 
 // /*===青ボタン===*/
-// .btn__Blue {
-//   background-color: $color_accent;
-//   color: $colorTx_wh;
-//   //  ホバー時
-//   &:hover {
-//     color: $colorTx_wh;
-//   }
-//   &:before {
-//     background: $color_primary;
-//   }
-// }
+.btn__Blue {
+  background-color: $color_accent;
+  color: $colorTx_wh;
+  //  ホバー時
+  &:hover {
+    color: $colorTx_wh;
+  }
+  &:before {
+    background: $color_primary;
+  }
+}
 
 // /*===外部リンクボタン===*/
 // .btn__OBL {
