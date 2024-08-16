@@ -161,10 +161,12 @@ function my_login_redirect( $redirect_to, $user_id ) {
     return home_url( '/private-works/' );
 }
 
+/**
+ * ログアウトURLを変更 wpmem_logout_link
+ */
 add_filter( 'wpmem_logout_link', 'my_logout_link' );
- 
 function my_logout_link( $string ) {
-    $string = home_url('logout');
+    $string = home_url('/');
     return $string;
 }
 

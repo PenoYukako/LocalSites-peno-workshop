@@ -22,21 +22,21 @@
           
           <p>様々なタッチのイラスト制作が可能です。</p>
           <ul>
-           <a href="<?php echo home_url('91'); ?>"><li>
+           <a href="<?php echo home_url('stockillust'); ?>"><li>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/illustList01.svg" alt="ストックイラスト">
               <span>ストックイラスト</span>
             </li></a>
-            <a href="<?php echo home_url('6'); ?>"><li>
+            <a href="<?php echo home_url('illustdeco'); ?>"><li>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/illustList02.svg" alt="挿絵イラスト・デコレーションスタンプ">
               <span>挿絵イラスト・デコレーションスタンプ</span>
             </li></a>
-            <a href="<?php echo home_url('89'); ?>"><li>             
+            <a href="<?php echo home_url('isometric'); ?>"><li>             
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/illustList03.svg" alt="アイソメトリックイラスト">
               <span>アイソメトリック<br>イラスト</span>
             </li></a>
-            <a href="<?php echo home_url('95'); ?>"><li>              
+            <a href="<?php echo home_url('manga'); ?>"><li>              
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/illustList04.svg" alt="日常漫画">
-              <span>アイソメトリック<br>イラスト</span>
+              <span>日常漫画<br>イラスト</span>
             </li></a>
           </ul>
         </section>
@@ -50,7 +50,7 @@
                 <li>ペノ ユカコ</li>
                 <li>
                   <a href="https://x.com/PenoPara"><i class="fa-brands fa-x-twitter faStyle sns"></i></a>
-                  <a href="#"><i class="fab fa-instagram faStyle sns"></i></a>
+                  <a href="https://www.instagram.com/penopara/?hl=ja"><i class="fab fa-instagram faStyle sns"></i></a>
                 </li>
                 <li>イラストを描くことが得意なフリーランスのデザイナーです。<br>WEB、DTP、コーディングなど、幅広く制作業務に携わっています。　趣味は漫画を描くこと。</li>
               </ul>

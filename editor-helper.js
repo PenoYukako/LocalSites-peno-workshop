@@ -46,6 +46,7 @@ wp.blocks.registerBlockStyle("core/paragraph", {
     isDefault: false,
 });
 
+
 // 公開実績
 wp.blocks.registerBlockStyle("core/group", {
     name: "works-group",

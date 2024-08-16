@@ -9,14 +9,13 @@
     <!-- OGP -->
     <meta property="og:url" content="http://peno-yukako.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="ペノパラ制作工房" />
-    <meta property="og:description" content="イラストを使った、かわいい親近感のあるデザインが好きです" />
+    <meta property="og:title" content="Peno workshop" />
+    <meta property="og:description" content="フリーランスでデザイナー、イラストレーターをしているペノユカコのサイトです" />
     <meta property="og:site_name" content="Peno workshop" />
     <meta property="og:image" content="http://peno-yukako.com/images/icon/ogp.jpg" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@PenoPara" />
-    
     <link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
 
     <!-- Script -->

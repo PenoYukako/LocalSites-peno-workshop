@@ -36,6 +36,7 @@ jQuery(function ($) {
       },500);
       //class gmenuが降りてくる
 
+
     }else if(!$menuButton.hasClass('isOpen')){
     //class isOpenが無ければ
 

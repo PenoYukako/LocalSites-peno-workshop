@@ -22,13 +22,13 @@ body{
 	display: block;
 	position: relative;
 	text-size-adjust: 100%;
+	font-family: 'Noto Sans Japanese', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 // h1 h2 h3 p li 基本フォント設定
 /* ============================================ */
 
 h1,h2,h3,p,li {
-	font-family: 'Noto Sans Japanese', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	color: $colorTx_common;
 	letter-spacing: 0.5rem;
 }
@@ -71,36 +71,6 @@ p,li,span {
 	}
 }
 
-// 通常固定ページテキスト
-/* ============================================ */
-
-// .textArea {
-// 	width: 100%;
-// 	max-width: 960px;
-// 	margin: 0 auto;
-// 	padding-bottom: 40px;
-// 	@include mq-down {
-// 			max-width: 100%;
-// 			padding: 0px 24px;
-// 		}
-// 	h2,h3{
-// 		margin: 16px 0 8px;
-// 	}
-// 	p,li,span{
-// 		font-size: 18px;
-// 		font-weight: 400;
-// 		line-height: 1.5rem;
-// 		letter-spacing: 0.1rem;
-// 		text-align: left;
-// 		padding: 8px 0;
-// 		@include mq-down {
-// 				font-size: 16px;
-// 			}
-// 	}
-// 	.txCenter {
-// 		text-align: center;
-// 	}
-// }
 
 // dd dt　文字サイズ、マージン
 /* ============================================ */

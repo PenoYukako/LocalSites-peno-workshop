@@ -50,26 +50,27 @@
             max-width: 100%;
             padding: 0px 24px;
         }
-    }
-}
-
-.policy-contents{
-    row-gap: 48px;
-    @include mq-down{
-        row-gap: 24px;
-    }
-    h2{
-        margin-bottom: 16px;
-    }
-    .is-style-detailedTx-paragraph{
-        line-height: 1.8rem;
-        &:first-child{
-            margin-bottom: 24px;
+        .policy-contents{
+            row-gap: 48px;
+            @include mq-down{
+                row-gap: 24px;
+            }
+            h2{
+                margin-bottom: 16px;
+            }
+            .is-style-detailedTx-paragraph{
+                line-height: 1.8rem;
+                &:first-child{
+                    margin-bottom: 24px;
+                }
+            }
+        
+            .is-style-detailedTx-paragraph.update-group{
+                background: #fff;
+                padding: 16px 24px;
+                text-align: left;
+            }
         }
     }
-    .update-group{
-        background: #fff;
-        padding: 16px 24px;
-        text-align: left;
-    }
+
 }

@@ -177,11 +177,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -226,7 +226,6 @@ p, li, span {
 }
 
 /* ============================================ */
-/* ============================================ */
 dl, dd {
   font-size: 16px;
   font-weight: 400;
@@ -253,6 +252,14 @@ img {
 }
 
 /* ============================================ */
+.wp-block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+}
+
 /*---------------------------------
  レイアウト
  ---------------------------------*/
@@ -533,11 +540,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -581,7 +588,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -1096,11 +1102,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -1144,7 +1150,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;

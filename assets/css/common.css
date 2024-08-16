@@ -336,11 +336,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -384,7 +384,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -926,11 +925,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -974,7 +973,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -1246,11 +1244,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -1294,7 +1292,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -2175,11 +2172,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -2223,7 +2220,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -2289,13 +2285,20 @@ img {
             flex-direction: column;
   }
 }
-.titleBox .container img {
-  max-height: 230px;
+.titleBox .container picture {
+  max-height: 240px;
+  max-width: 240px;
   padding-left: 48px;
 }
 @media screen and (max-width: 768px) {
-  .titleBox .container img {
-    width: 100%;
+  .titleBox .container picture {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titleBox .container picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 240px;
     max-height: 240px;
     padding: 24px 0;
@@ -2552,11 +2555,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -2600,7 +2603,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -2866,11 +2868,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -2914,7 +2916,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
@@ -3010,25 +3011,24 @@ img {
     padding: 0px 24px;
   }
 }
-
-.policy-contents {
+.pageContents .contents .policy-contents {
   row-gap: 48px;
 }
 @media screen and (max-width: 768px) {
-  .policy-contents {
+  .pageContents .contents .policy-contents {
     row-gap: 24px;
   }
 }
-.policy-contents h2 {
+.pageContents .contents .policy-contents h2 {
   margin-bottom: 16px;
 }
-.policy-contents .is-style-detailedTx-paragraph {
+.pageContents .contents .policy-contents .is-style-detailedTx-paragraph {
   line-height: 1.8rem;
 }
-.policy-contents .is-style-detailedTx-paragraph:first-child {
+.pageContents .contents .policy-contents .is-style-detailedTx-paragraph:first-child {
   margin-bottom: 24px;
 }
-.policy-contents .update-group {
+.pageContents .contents .policy-contents .is-style-detailedTx-paragraph.update-group {
   background: #fff;
   padding: 16px 24px;
   text-align: left;
@@ -3209,11 +3209,11 @@ body {
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 /* ============================================ */
 h1, h2, h3, p, li {
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #0D0D0D;
   letter-spacing: 0.5rem;
 }
@@ -3257,7 +3257,6 @@ p, li, span {
   }
 }
 
-/* ============================================ */
 /* ============================================ */
 dl, dd {
   font-size: 16px;
